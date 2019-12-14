@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Button } from "reactstrap";
 import CharacterCard from "./CharacterCard";
 import { Link } from "react-router-dom";
-import { Button } from "reactstrap";
 
 export default function SearchForm() {
   const [data, setData] = useState([]);
@@ -10,8 +10,8 @@ export default function SearchForm() {
 
   useEffect(() => {
     axios.get("https://rickandmortyapi.com/api/character/").then(response => {
-      const characters = response.data.results.filter(char =>
-        char.name.toLowerCase().includes(query.toLowerCase())
+      const characters = response.data.results.filter(character =>
+        character.name.toLowerCase().includes(query.toLowerCase())
       );
       setData(characters);
     });
