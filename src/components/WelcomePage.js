@@ -8,10 +8,10 @@ export default function WelcomePage() {
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
         <Link to="/Characters">
-          <Button>Characters</Button>
+          <Button className="btn">Characters</Button>
         </Link>
         <Link to="/Search">
-          <Button>Search</Button>
+          <Button className="btn">Search</Button>
         </Link>
 
         <img

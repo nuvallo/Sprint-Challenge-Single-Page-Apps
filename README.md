@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client side routing is faster when navigating through your app as it does not generate and return a completely new page for every interaction.
 
 ## Project Set Up
 

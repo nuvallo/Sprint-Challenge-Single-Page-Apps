@@ -33,7 +33,7 @@ export default function SearchForm() {
         />
 
         <Link to="/">
-          <Button>Home</Button>
+          <Button className="btn">Home</Button>
         </Link>
       </form>
 

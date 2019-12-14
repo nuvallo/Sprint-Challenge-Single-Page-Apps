@@ -12,7 +12,6 @@ export default function CharacterList() {
       .get("https://rickandmortyapi.com/api/character/")
       .then(response => {
         setCharacter(response.data.results);
-        console.log(response);
       })
       .catch(error => {
         console.error("Server Error", error);
