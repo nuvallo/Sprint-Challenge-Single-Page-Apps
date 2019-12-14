@@ -8,19 +8,15 @@ import {
   Button
 } from "reactstrap";
 
-export default function CharacterCard(props) {
+export default function CharacterCard({ name, species, status }) {
   return (
-    <>
-      <Card>
-        <CardImg top width="100%" src={props.image} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>{props.name}</CardTitle>
-          <CardSubtitle>{props.status}</CardSubtitle>
-          <CardSubtitle>Species: {props.species}</CardSubtitle>
-          <CardSubtitle>Origin: {props.origin}</CardSubtitle>
-          <Button>Button</Button>
-        </CardBody>
-      </Card>
-    </>
+    <Card>
+      <CardBody>
+        <CardTitle>{name}</CardTitle>
+        <CardSubtitle>{status}</CardSubtitle>
+        <CardSubtitle>Species: {species}</CardSubtitle>
+        <Button>Button</Button>
+      </CardBody>
+    </Card>
   );
 }
